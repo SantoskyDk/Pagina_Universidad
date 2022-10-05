@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: aqua;
+    height: auto;
+}
+
+footer {
+    background-color: aquamarine;
+    height: 50px;
+}
+
+.div-logo {
+    display: inline-block;
+}
+#logo {
+    background-color: aqua;
+}
+
+.div-portada{
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#portada {
+    display: inline-block;
+    width: auto;
+    height: 120px;
+}
+
+/* ######## NAV ######## */
+.interior {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+    background-color: #0b132b;
+}
+
+.navegacion {
+    float: center;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+    background-color: #0b132b;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.navegacion ul li:hover {
+    transform: scale(1.1);
+}
+
+.navegacion ul li a {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+}
+
+.navegacion ul li a:hover {
+    color: #00c9bd;
+    transform: scale(1.1);
+}
+
+.navegacion ul li:hover .hijos {
+    display: block;
+}
+
+.navegacion .submenu .hijos {
+    display: none;
+    background: #0b132b;
+    position: absolute;
+    width: 100%;
+}
+
+.navegacion .submenu .hijos li {
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.navegacion .submenu .hijos li a {
+    display: block;
+}
+
+/* ######## FIN NAV ######## */
+
+/* ######## CARROUSEL ######## */
+.slider-frame {
+    width: 600px;
+    height: auto;
+    margin: 50px auto 0; /*top , izq-der , bottom*/
+    overflow: hidden; /* ocultar lo que quede afuera */
+}
+
+.slider-frame ul {
+    display: flex; /* Para que las img queden una al lado de otra */
+    padding: 0;
+    width: 400%; /* Porque quiero que cada imagen equivalga a 100% (4 imágenes) */
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide { /* Establece como se iran reproduciendo las imágenes */
+    0% {margin-left: 0;}
+    20% {margin-left: 0;} /*Establece el porcentaje de tiempo que se verá la 1er imagen*/
+
+    25% {margin-left: -100%;}/*Dejo un margen de 5% para que la siguiente imagen no se reproduzca inmediatamente*/
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;} /*Cada imagen tiene un porcentaje de 100%, y se le indica en QUE porcentaje pasar a la siguiente imagen*/
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+/* ######## FIN CARROUSEL ######## */
