@@ -5,22 +5,22 @@
 }
 
 header {
-    background-color: aqua;
-    height: auto;
+    background-color: #0b132b;
+    height: 9.7vw;
 }
 
-footer {
-    background-color: aquamarine;
-    height: 50px;
-}
-
+/* ######## LOGO ######## */
 .div-logo {
     display: inline-block;
 }
 #logo {
-    background-color: aqua;
+    background-color: #0b132b;
+    width: auto;
+    height: 9.9vw;
 }
+/* ######## FIN LOGO ######## */
 
+/* ######## PORTADA ######## */
 .div-portada{
     display: block;
     margin: 0;
@@ -31,13 +31,14 @@ footer {
 #portada {
     display: inline-block;
     width: auto;
-    height: 120px;
+    height: 9.7vw;
 }
+/* ######## FIN PORTADA ######## */
 
 /* ######## NAV ######## */
 .interior {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 6px 10px 0px;
     margin: auto;
     background-color: #0b132b;
 }
@@ -107,9 +108,9 @@ footer {
 
 /* ######## CARROUSEL ######## */
 .slider-frame {
-    width: 600px;
-    height: auto;
-    margin: 50px auto 0; /*top , izq-der , bottom*/
+    width: auto;
+    height: 650px;
+    margin: 0px auto 0; /*top , izq-der , bottom*/
     overflow: hidden; /* ocultar lo que quede afuera */
 }
 
@@ -144,3 +145,12 @@ footer {
     100% {margin-left: -300%;}
 }
 /* ######## FIN CARROUSEL ######## */
+
+/* ######## FOOTER ######## */
+
+footer {
+    background-color: aquamarine;
+    height: 50px;
+}
+
+/* ######## FIN FOOTER ######## */
